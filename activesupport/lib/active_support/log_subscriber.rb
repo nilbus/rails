@@ -96,7 +96,7 @@ module ActiveSupport
     end
 
     def logger
-      LogSubscriber.logger
+      self.class.logger
     end
 
     def start(name, id, payload)
